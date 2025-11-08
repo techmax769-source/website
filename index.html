@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mitai Delights | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Navigation -->
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Mitai Delights</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="order.html">Order</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <button id="chatbotBtn">💬 Chat</button>
   </header>
 
-  <!-- Background Video Section -->
+  <!-- Hero -->
   <section class="hero">
     <video autoplay muted loop id="bg-video">
-      <source src="https://cdn.pixabay.com/video/2023/05/16/162008-828722720_tiny.mp4" type="video/mp4">
+      <source src="https://cdn.pixabay.com/video/2023/05/16/162008-828722720_tiny.mp4" type="video/mp4" />
     </video>
     <div class="hero-content">
-      <h1>Sweet. Crispy. Irresistible.</h1>
-      <p>Welcome to Mitai Delights — Home of authentic Swahili Mitai!</p>
-      <a href="order.html" class="btn">Order Now - Free Delivery!</a>
+      <h1>Delicious Swahili Mitai</h1>
+      <p>Crispy outside, soft inside — the sweet taste of coastal tradition!</p>
+      <a href="order.html" class="btn">Order Now – Free Delivery!</a>
     </div>
   </section>
 
+  <!-- About -->
+  <section class="menu-section">
+    <h2>Welcome to Mitai Delights</h2>
+    <p>
+      Experience the authentic Swahili taste made with love, fresh ingredients,
+      and tradition. Each Mitai is hand-crafted, crispy, and coated with a
+      perfect sugar glaze.
+    </p>
+    <p><strong>Only Ksh 10 per piece — Free delivery within Chuka town!</strong></p>
+  </section>
+
+  <!-- Chatbot Floating Button -->
+  <button id="chatbotToggle">💬</button>
+
+  <!-- Chatbot Box -->
+  <div id="chatbotBox" class="chatbot-hidden">
+    <div class="chat-header">
+      <span>Mitai Assistant 🍬</span>
+      <button id="closeChat">✖</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="bot-message">Hi there! 👋 How can I help you today?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message..." />
+      <button id="sendMsg">➤</button>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
-    <p>📍 Chuka, Ndagani Town - Opposite Gate A, Chuka University</p>
-    <p>&copy; 2025 Mitai Delights | All rights reserved.</p>
+    <p>📍 Chuka, Ndagani Town – Opposite Gate A, Chuka University</p>
+    <p>&copy; 2025 Mitai Delights | All Rights Reserved</p>
   </footer>
-
 </body>
 </html>
