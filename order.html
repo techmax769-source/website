@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Mitai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Mitai Delights</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="order.html" class="active">Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="order-section">
+  <h2>Place Your Order</h2>
+  <form class="order-form" onsubmit="submitOrder(event)">
+    <label>Name:</label>
+    <input type="text" required>
+    <label>Phone Number:</label>
+    <input type="tel" required>
+    <label>Quantity:</label>
+    <input type="number" min="1" required>
+    <p>Delivery: <strong>Free!</strong></p>
+    <button type="submit" class="btn">Submit Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>📍 Chuka, Ndagani Town - Opposite Gate A, Chuka University</p>
+</footer>
+
+</body>
+</html>
